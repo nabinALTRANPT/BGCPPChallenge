@@ -16,26 +16,28 @@ The program is written in C++ using various existing Library and was compiled in
 •	JSONCPP – to export XML files to JSON files
 
 //Prerequisite
-
-      Docker INSTALLATION 
+  Docker INSTALLATION 
 
 Install Docker from this link (https://hub.docker.com/_/gcc/)
 
 In command line Run docker --version and ensure that you have a supported version of Docker: 
+  
+      docker --version 
+
 Build the container if there is none  where  you wish to compile the source code and update with revelant library from the command line. 
 
-docker ps      //  shows the list of container 
+      docker ps      //  shows the list of container 
 
-dokcer exec –it  container_name /bin/bash    // executes the  container container_name in ubuntu
+      dockcer exec –it  container_name /bin/bash    // executes the  container container_name in ubuntu
 
  
 After executing the container INSTALL relevant library as follows 
 
-$ apt-get install apt-get install libtinyxml-dev
+     $ apt-get install apt-get install libtinyxml-dev
 
-$ apt-get install apt-get install libxerces-c3-dev
+     $ apt-get install apt-get install libxerces-c3-dev
 
-$ apt-get install apt-get install  libjsoncpp-dev
+     $ apt-get install apt-get install  libjsoncpp-dev
 
 
 //Compilation and execution of source code 
@@ -50,15 +52,15 @@ Run the updated container in Ubuntu
        
 Check the copied files in root as follow
 
-     $  ls 
+       $  ls 
      
 Compile the source code 
 
-    $   g++ filename.cpp -o filename  -lxerces-c -ltinyxml  -ljsoncpp
+      $   g++ filename.cpp -o filename  -lxerces-c -ltinyxml  -ljsoncpp
     
  exeecute the source code 
  
-    $ ./filename.cpp
+      $ ./filename.cpp
     
 The output shall ask for user input to perform selected task. 
 
