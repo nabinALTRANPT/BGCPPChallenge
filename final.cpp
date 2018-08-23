@@ -162,7 +162,7 @@ int main() {
 			domParser.setDoSchema(true);
 			domParser.setValidationConstraintFatal(true);
 			
-			const char *xmlfile[50] = {"data1.xml","data1.xml","data1.xml" };
+			const char *xmlfile[50] = {"data1.xml","data2.xml","data3.xml" };
 			domParser.parse(xmlfile[index]);
 			if (domParser.getErrorCount() == 0)
 				printf("XML file validated against the schema successfully\n");
