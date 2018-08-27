@@ -174,6 +174,7 @@ int main() {
 		cout << "Three XML files are created and validated, Thank you\n";
 
 		XMLPlatformUtils::Terminate();
+			main();
 		break;
 
 	case 2:
@@ -187,11 +188,13 @@ int main() {
 
 			event["stringMember"] = j[i].stringMember;
 			event["intMember"] = j[i].intmember;
+			file_id << event << std::endl;
 			file_id.close();
 			std::cout << (j[i].filename) << std::endl;
 			std::cout << event << std::endl;
 		}
 		std::cout << "XML data has been exported to JSON files successfully , Thank you" << std::endl;
+			main();
 		break;
 
 	
